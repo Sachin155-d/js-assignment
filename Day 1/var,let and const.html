@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var let and const </title>
+</head>
+<body>
+    <script>
+
+    //======================Var Method================//
+/*var variables can be re-declared and updated whenever needed*/
+
+var greetings='Hey Good morning';
+greetings='Hey Good Afternoon its time to join Upgrade';
+console.log(greetings);
+
+/*
+
+Here greetings variable is globally scoped becuase it is out side the function 
+but hello veriable which is inside the function have local scope within function
+*/
+   var greetings='Hey Good Morning';
+   
+   function newFunction(){
+       var hello="hello";
+   }
+console.log(greetings);
+console.log(hello); //this will give error   
+
+//=======================let====================// 
+
+/* let->is a block scoped means that the variable declare with const can't be accessed outside the function block */
+
+function greet(){
+    let hello='Hey how are you??'
+}
+console.log(hello)//it will gives erro
+
+/* let can be updated but not re-declared*/
+
+let hello='Hii how are you??';
+let hello='Where are you now??'; ///this will give error bcoz you re-declared the same variable
+///=======================const================///
+
+/* const -> is  block scoped  and it maintain the constant values
+ const cannot be updated or re-declared
+*/
+const msg = 'say Hi';
+    msg = 'say Hello instead'; // error: Assignment to constant variable. 
+
+
+
+
+    </script>
+</body>
+</html>
