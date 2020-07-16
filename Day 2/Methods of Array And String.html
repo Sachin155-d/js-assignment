@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String And Array Methods</title>
+</head>
+<body>
+    <script>
+////===================String Methods====================////
+
+//===============indexOf() Method====================//
+
+var str='please ask him what he ask from me!!!';
+var pos=str.indexOf('ask');
+console.log('Index is:'+pos);
+
+//==============lastIndexOf() method================//
+var str='please ask him what he ask from me!!!';
+var pos=str.lastIndexOf('ask');
+console.log('Last Index of ask is:'+pos);
+
+//=============serach() method====================//
+var str='please ask him what he ask from me!!!';
+var pos=str.search('ask');
+console.log('After searching the position of ask is:'+pos);
+
+//==============slice() method====================//
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+console.log(res);
+//===============substring() method====================//
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);  //substring can't accept negative indexing
+//===============replace() method=====================//
+var name="my name is Sachin";
+var change=name.replace('Sachin','Abhishek');
+console.log(change);
+
+
+////======================Array methods===============////
+
+//=======================toString()===================//
+var fruits=['Mango','Apple','Orange','Banana']
+var str1=fruits.toString()
+console.log(str1);
+
+//=================pop() method======================//
+
+var fruits=['Mango','Apple','Orange','Banana']
+var str1=fruits.pop()
+console.log(str1);
+
+//=================push() method======================//
+
+var fruits=['Mango','Apple','Orange','Banana']
+var str1=fruits.push('Kiwi')
+console.log(fruits);
+
+
+    </script>
+</body>
+</html>
