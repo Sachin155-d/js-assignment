@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program1</title>
+</head>
+<body>
+    <script>
+var arr=[];
+var num;
+while(true){
+    var num=prompt('Enter num:');
+    if(num>=0)
+    {
+        arr.push(num);
+        console.log(arr);
+    }
+    else if(num<0)
+    {
+        break;
+    }
+}
+//============ filtering elements from array==========
+arr=arr.filter(elem=>elem%2==0);
+console.log('Filtered array is:',arr);
+
+//==================using map for cubes==============
+arr.map((v,i)=>{
+    arr[i]=v*v*v;
+})
+console.log('cubes',arr)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
