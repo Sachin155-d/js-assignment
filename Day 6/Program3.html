@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 3</title>
+</head>
+<style>
+.dark{
+    background-color: black;
+    color: #e6e6e6;
+}
+#time{
+    color: red;
+}
+#title{
+    color: red;
+}
+#btn{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+</style>
+<body>
+<p id="time">Time</p>
+<h1 id="title"></h1>
+
+<button id="btn" onclick="myFunction()"> Turn On Dark Mode</button>
+</body>
+    <script>
+    //=======================for user name===========================
+    const name=prompt('Please Enter Your Name');
+    title.innerHTML+=`${name}Welcome  on the page`;
+
+    //=======================For the time ============================
+    var time=new Date();
+    document.getElementById('time').innerHTML=time.toLocaleTimeString();
+
+  //==========================for dark mode==============================
+  function myFunction() { 
+        var element = document.body; 
+        element.classList.toggle("dark"); 
+        }
+
+    </script>
+</html>
